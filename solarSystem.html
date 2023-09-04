@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        .center{
+            position: absolute;
+            left: 50%;
+             top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        @keyframes solar {
+			0% {
+				transform: rotate(0deg)
+					translateY(70px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(70px) rotate(-360deg);
+			}
+		}
+
+        @keyframes earth {
+            
+            0%{
+                transform: rotate(0deg)
+                translateY(110px) rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg)
+                translateY(110px)
+                rotate(-360deg);
+            }
+
+
+        }
+
+        @keyframes mars {
+			0% {
+				transform: rotate(0deg)
+					translateY(130px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(130px) rotate(-360deg);
+			}
+		}
+
+        @keyframes ven {
+			0% {
+				transform: rotate(0deg)
+					translateY(90px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(90px) rotate(-360deg);
+			}
+		}
+
+        @keyframes sat {
+			0% {
+				transform: rotate(0deg)
+					translateY(210px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(210px) rotate(-360deg);
+			}
+		}
+
+        @keyframes ur {
+			0% {
+				transform: rotate(0deg)
+					translateY(250px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(250px) rotate(-360deg);
+			}
+		}
+
+        @keyframes nep {
+			0% {
+				transform: rotate(0deg)
+					translateY(280px) rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg)
+					translateY(280px) rotate(-360deg);
+			}
+		}
+
+        @keyframes moo {
+            
+            0%{
+                transform: rotate(0deg)
+                translateY(10px)
+                rotate(0deg);
+            }
+
+            100% {
+				transform: rotate(360deg)
+					translateY(10px) rotate(-360deg);
+			}
+
+
+        }
+
+        .moon{
+            animation: moo 5s infinite linear;
+        }
+
+
+        .mars{
+            animation: mars 12s infinite linear;
+        }
+
+        .mer{
+            animation: solar 6s infinite linear;
+        }
+
+        .venus{
+         
+            animation: ven 8s infinite linear;
+
+        }
+
+        .earth{
+
+            animation: earth 10s infinite linear;
+
+        }
+
+        .jupiter{
+
+            animation: jupi 14s infinite linear;
+
+        }
+
+        .saturn{
+
+            animation: sat 16s infinite linear;
+
+        }
+        
+        .uranus{
+
+            animation: ur 18s infinite linear;
+
+        }
+
+        .neptune{
+
+
+            /* position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0em 0 0;
+            border-radius: 50%;
+            transform: rotate(20deg); */
+            animation: nep 20s infinite linear;
+
+        }
+
+        .satRings{
+
+            animation: ring 16s infinite linear;
+
+        }
+
+        @keyframes ring {
+            
+            0%{
+                transform: rotate(0deg);
+            }
+
+            5%{
+                transform: rotate(20deg);
+            }
+
+            10%{
+                transform: rotate(40deg);
+            }
+
+            15%{
+                transform: rotate(60deg);
+            }
+
+            20%{
+                transform: rotate(80deg);
+            }
+
+            25%{
+                transform: rotate(100deg);
+            }
+
+            30%{
+                transform: rotate(120deg);
+            }
+
+            35%{
+                transform: rotate(140deg);
+            }
+
+            40%{
+                transform: rotate(160deg);
+            }
+
+            45%{
+                transform: rotate(180deg);
+            }
+
+            50%{
+                transform: rotate(200deg);
+            }
+
+            55%{
+                transform: rotate(220deg);
+            }
+
+            60%{
+                transform: rotate(240deg);
+            }
+
+            65%{
+                transform: rotate(260deg);
+            }
+
+            70%{
+                transform: rotate(280deg);
+            }
+
+            75%{
+                transform: rotate(300deg);
+            }
+
+            80%{
+                transform: rotate(320deg);
+            }
+
+            85%{
+                transform: rotate(340deg);
+            }
+
+            90%{
+                transform: rotate(360deg);
+            }
+
+            100%{
+                transform: rotate(-360deg);
+            }
+
+        }
+
+        @keyframes jupi {
+            
+            0%{
+                transform: rotate(0deg)
+                translateY(170px)
+                rotate(0deg);
+            }
+
+            100% {
+				transform: rotate(360deg)
+					translateY(170px) rotate(-360deg);
+			}
+
+        }
+
+        .sun{
+            -webkit-box-shadow:0px 0px 50px 30px #fff700 ;
+-moz-box-shadow:0px 0px 50px 30px #fff700 ;
+box-shadow:0px 0px 50px 30px #fff700 ;
+        }
+
+        .orbit{
+
+            transform: translateY(-80px) rotate(-45deg);
+
+        }
+
+    </style>
+</head>
+<body style="background-color: black;">
+
+    <div class="center sun" style="height: 60px; width: 60px; border-radius: 50%; background-color: yellow;"></div>
+
+    <div class="center mer" style="width: 5px; height: 5px; border-radius: 50%; background-image: linear-gradient(to bottom, #b1b1b1, #d9d9d9, #e6e6e6);
+    margin-left: -5px;">
+
+    </div>
+
+
+    <div class="center venus" style="width: 7px; height: 7px; border-radius: 50%; background-image: linear-gradient(to bottom, #f3c06f, #f7d58f, #fbdca9);
+    "></div>
+
+    <div class="center earth" style="width: 12px; height: 12px; border-radius: 50%; background-image: linear-gradient(to bottom, #2a6496, #4389ab, #75b4d0);
+    ">
+  <div class="center moon" style="width: 2px; height: 2px; border-radius: 50%; background-image: linear-gradient(to bottom, #e0e0e0, #f4f4f4, #ffffff);
+
+  "></div>
+
+
+</div>
+
+    <div class="center mars" style="width: 8px; height: 8px; border-radius: 50%; background-image: linear-gradient(to bottom, #a23a18, #d66031, #f08855);
+    "></div>
+
+    <div class="center jupiter" style="width: 24px; height: 24px; border-radius: 50%;  background-image: linear-gradient(to bottom, #b37f4c, #d4a071, #f1c88e, #f4d8a5, #f4e3b7, #f9e9c8, #faf2db, #faf8eb);"></div>
+
+    <div class="center saturn" style="width: 22px; height: 22px; border-radius: 50%;  background-image: linear-gradient(to bottom, #ebb573, #f2c988, #f9de9d);
+    ">
+    <div class="satRings" style="width: 40px; background-color: white; height: 1px; margin-top: 10px;
+    position: relative; right:8px;"></div>
+</div>
+
+    <div class="center uranus" style="width: 16px; height: 16px; border-radius: 50%;  background-image: linear-gradient(to bottom, #5ab8d6, #85cfe4, #aee6f1);
+    "></div>
+
+    <div class="center neptune" style="width: 16px; height: 16px; border-radius: 50%;  background-image: linear-gradient(to bottom, #1c3c7e, #345dab, #5888cc);
+    ">
+
+
+</div>
+   
+    
+    
+</body>
+</html>

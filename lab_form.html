@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        .mar {
+            margin-top: 5px;
+        }
+        .center{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%,-50%);
+        box-shadow: 2px 10px 50px 20px #0000005c;
+        }
+    </style>
+</head>
+
+<body style=" font-family: 'Montserrat', sans-serif;">
+
+    <div class="center">
+
+    <table style="background-color:#916DB3  ; width: 700px; padding: 40px;  ">
+        <form action="">
+            <tr>
+                <td>
+                    <label for="">Reg No.</label><br>
+                </td>
+                <td>
+                    <label for="">Invoice No.</label>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <input class="mar" type="number">
+                </td>
+                <td>
+                    <input class="mar" type="text" placeholder="E00000001" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Check-in
+                </td>
+                <td>
+                    Expected Check-out
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="mar" type="date" style="width: 165px;">
+                </td>
+                <td>
+                    <input class="mar" type="date" style="width: 165px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Room type</td>
+                <td>Meal plan</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="room" id="" style="width: 170px;">
+                        <option selected disabled value="">Choose
+                        </option>
+                        <option value="">smaller</option>
+                        <option value="">small</option>
+                        <option value="">Mediam</option>
+                        <option value="">Large</option>
+                        <option value="">Larger</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="meal" id="" style="width: 170px;">
+                        <option selected disabled value="">Choose
+                        </option>
+                        <option value="">Half</option>
+                        <option value="">Full</option>
+                        <option value="">Delux</option>
+                        <option value="">Ultra-Delux</option>
+                        <option value="">Supreme</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Room No.</td>
+                <td>Guest Basis</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="romNo" id="" style="width: 170px;">
+                        <option selected disabled value="">Choose</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="Gbasis" id="" style="width: 170px;">
+                        <option selected  value="">Direct Booking</option>
+                        <option value="">Reserved</option>
+                        <option value="">Non-reserved</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Guest type:</td>
+                <td>Bill To</td>
+            </tr>
+            <tr>
+                <td>
+                    <select style="width: 170px;" name="Gtype" id="">
+                        <option value="">Tourist</option>
+                        <option value="">Work Basis</option>
+                        <option value="">Resident</option>
+                    </select>
+                </td>
+                <td>
+                    <input name="billto" type="radio"> Customer
+                    <input name="billto" type="radio"> Company
+                </td>
+            </tr>
+            <tr>
+                <td>Company Name:</td>
+                <td>Full Name:</td>
+            </tr>
+            <tr>
+                <td>
+                <input placeholder="Company Name" type="text">
+            </td>
+            <td>
+                <input type="text">
+            </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>Mobile-No:</td>
+            </tr>
+            <tr>
+                <td>
+                <input type="email">
+            </td>
+            <td>
+                <input type="number">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    WP/NID
+                </td>
+                <td>Passport Number</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td>Country of Residence</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="nation" id="" style="width: 170px;">
+                        <option selected disabled value="">--select one--</option>
+                        <option value="">Indian</option>
+                        <option value="">American</option>
+                        <option value="">Russian</option>
+                        <option value="">Australian</option>
+                        <option value="">Japanese</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="nation" id="" style="width: 170px;">
+                        <option selected disabled value="">--select one--</option>
+                        <option value="">India</option>
+                        <option value="">America</option>
+                        <option value="">Russia</option>
+                        <option value="">Australia</option>
+                        <option value="">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td>Profession</td>
+            </tr>
+            <tr>
+                <td><input type="date" style="width: 165px;"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+              <td>No. of pax</td>
+              <td>Group</td>
+            </tr>
+            <tr>
+                <td><input type="number" value="1"></td>
+                <td>
+                    <select name="groups" id="" style="width: 175px;">
+                        <option value="">no</option>
+                        <option value="">yes</option>
+                    </select>
+                </td>
+            </tr>
+        </form>
+    </table>
+
+
+
+</div>
+
+</body>
+
+</html>

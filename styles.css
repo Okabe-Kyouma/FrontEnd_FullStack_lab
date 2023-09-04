@@ -1,0 +1,13 @@
+.form{
+ text-align: center;
+ font-size: 30px;
+ margin-top: 20%;
+ font-family: 'Montserrat', sans-serif;
+ border: 5px solid purple;
+}
+
+#fname,#lname,#mname{
+
+    font-size: 20px;
+
+}
